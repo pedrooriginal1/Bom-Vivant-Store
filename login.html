@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Bom Vivant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Bom Vivant Store</a>
+    </div>
+  </header>
+
+  <main class="container auth-page">
+    <div class="card auth-card">
+      <h2>Entrar</h2>
+      <form id="login-form">
+        <label>Email
+          <input id="login-email" type="email" required />
+        </label>
+        <label>Senha
+          <input id="login-password" type="password" required minlength="4" />
+        </label>
+        <button class="btn btn-primary" type="submit">Entrar</button>
+      </form>
+
+      <hr />
+
+      <h3>Cadastrar</h3>
+      <form id="register-form">
+        <label>Nome
+          <input id="reg-name" type="text" required />
+        </label>
+        <label>Email
+          <input id="reg-email" type="email" required />
+        </label>
+        <label>Senha
+          <input id="reg-password" type="password" required minlength="4" />
+        </label>
+        <button class="btn" type="submit">Cadastrar</button>
+      </form>
+
+    </div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bom Vivant Store</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Bom Vivant Store</a>
+      <nav class="main-nav">
+        <a href="produtos.html">Produtos</a>
+        <a href="admin.html">Admin</a>
+        <a id="user-link" href="login.html">Entrar</a>
+        <a href="carrinho.html" class="cart-link">Carrinho (<span id="cart-count">0</span>)</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="carousel" id="carousel">
+        <div class="slides">
+          <div class="slide" style="background-image:url('img/banners/banner1.jpg')"></div>
+          <div class="slide" style="background-image:url('img/banners/banner2.jpg')"></div>
+          <div class="slide" style="background-image:url('img/banners/banner3.jpg')"></div>
+        </div>
+        <button class="carousel-prev" aria-label="Anterior">‹</button>
+        <button class="carousel-next" aria-label="Próximo">›</button>
+      </div>
+      <div class="hero-intro container">
+        <h1>Estilo premium. Conforto inigualável.</h1>
+        <p>Descubra os lançamentos e edições limitadas da Bom Vivant Store.</p>
+        <a class="btn btn-primary" href="produtos.html">Ver produtos</a>
+      </div>
+    </section>
+
+    <section class="destaques container">
+      <h2>Lançamentos</h2>
+      <div id="destaque-list" class="grid grid-3"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Bom Vivant Store</h3>
+        <p>Design premium • Entrega simulada • Atendimento exemplar</p>
+      </div>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

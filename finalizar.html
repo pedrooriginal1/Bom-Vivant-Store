@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Finalizar Pedido — Bom Vivant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Bom Vivant Store</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Finalizar Pedido</h1>
+    <form id="checkout-form" class="card">
+      <h3>Endereço</h3>
+      <label>Nome completo<input id="nome" required></label>
+      <label>Endereço<input id="endereco" required></label>
+      <label>CEP<input id="cep" required></label>
+
+      <h3>Pagamento (simulado)</h3>
+      <label>Cartão<input id="cartao" required minlength="12"></label>
+      <label>Validade<input id="validade" required></label>
+      <label>CVV<input id="cvv" required minlength="3"></label>
+
+      <div class="checkout-summary">
+        <p>Total: <strong id="checkout-total">R$ 0,00</strong></p>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Confirmar Pedido</button>
+    </form>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/finalizar.js"></script>
+</body>
+</html>
